@@ -20,7 +20,15 @@ namespace PlatformDataTool.Forms
 
         private void MainForm_Load(object sender, EventArgs e)
         {
+            InitialiseOrganisationsTab();
             InitialiseSubscriptionsTab();
+        }
+
+        private void InitialiseOrganisationsTab()
+        {
+            this.OrganisationName.Text = string.Empty;
+            this.OrganisationId.Text = string.Empty;
+            this.OrganisationSupportRef.Text = string.Empty;
         }
 
         private void InitialiseSubscriptionsTab()
